@@ -11,8 +11,7 @@ Tools: Apache Tomcat, VS Code / NetBeans
 🍿 Choose snacks
 💳 Select payment method
 📄 View ticket/receipt after booking
-🎛️ Admin panel to view all bookings (in memory)
-🔐 Multiple users with login functionality (file or session-based)
-
+🎛️ Admin panel to view all bookings
+🔐 Multiple users with login functionality.
 
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Book Your Movie Ticket</h1>
+        <form onsubmit="return handleSubmit(event)">
+            <label>Movie:</label>
+            <select>
+                <option>RRR</option>
+                <option>Jawan</option>
+                <option>Pushpa 2</option>
+            </select><br>
+
+            <label>Date:</label>
+            <select>
+                <option>2025-08-10</option>
+                <option>2025-08-11</option>
+            </select><br>
+
+            <label>Time:</label>
+            <select>
+                <option>10:00 AM</option>
+                <option>1:00 PM</option>
+                <option>6:00 PM</option>
+            </select><br>
+
+            <label>Number of Tickets:</label>
+            <input type="number" min="1" max="10" value="1"><br>
+
+            <label>Seat Type:</label>
+            <select>
+                <option>Balcony</option>
+                <option>Gold</option>
+                <option>Regular</option>
+            </select><br>
+
+            <label>Snacks:</label>
+            <select>
+                <option>Popcorn</option>
+                <option>Combo (Popcorn + Coke)</option>
+                <option>Nachos</option>
+            </select><br>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+        <p id="successMsg"></p>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            document.getElementById("successMsg").textContent = "🎉 Ticket Booked Successfully!";
+            return false;
+        }
+    </script>
+</body>
+</html>
